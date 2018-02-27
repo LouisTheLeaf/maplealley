@@ -11,6 +11,7 @@ class Home extends Component {
   state = {
     value: 'hello',
   }
+  
   componentDidMount(){
     let leafian = this
     // fire.database().ref('/').on('value', function(snapshot) {
