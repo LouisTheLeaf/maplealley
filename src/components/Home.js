@@ -4,19 +4,14 @@ import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import {Container, Button} from 'semantic-ui-react';
 import img1 from '../img/maple-leaf-two.png'
-import img2 from '../img/maple-leaf-three.png'
-import img3 from '../img/maple-leaf-four.png'
 
 class Home extends Component {
   state = {
     value: 'hello',
   }
-  
+
   componentDidMount(){
     let leafian = this
-    // fire.database().ref('/').on('value', function(snapshot) {
-    //   leafian.setState({value: console.log(snapshot.val().section1)})
-    // });
     fire.database().ref('/').on('value', (snapshot) => {
       leafian.setState({value: console.log(snapshot.val().section1)})
       console.log('Data Updated')
@@ -41,7 +36,7 @@ class Home extends Component {
     )
     return (
       <Container>
-          <img src={img1} className="logo" alt="logo"/>
+          <img src={img1} className="logo"/>
       </Container>
     )
   }

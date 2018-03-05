@@ -1,40 +1,50 @@
-import React, { Component } from 'react'
-import { Menu } from 'semantic-ui-react'
-import img1 from '../img/maple-leaf-two.png'
-import img2 from '../img/maple-leaf-three.png'
-import img3 from '../img/maple-leaf-four.png'
+import React, { Component } from 'react';
+import { Menu, Container, } from 'semantic-ui-react';
+import {withRouter} from 'react-router-dom';
+import img1 from '../img/maple-leaf-two.png';
+import img2 from '../img/maple-leaf-three.png';
+import img3 from '../img/maple-leaf-four.png';
 
 const colorsA = ['Home', 'Directory', 'Quizes', 'Forums', 'About Us', 'Contact Us']
 
-export default class ColoredMenus extends Component {
+class ColoredMenus extends Component {
   state = {
-    activeItem: '',
     activeA: colorsA[0],
-    itemOne: true,
-    itemTwo: false,
-    itemThree: false,
   }
 
-  handleAClick = (e, { name }) => this.setState({ activeA: name, activeItem: name })
+  handleAClick = (e, { name }) => this.setState({ activeA: name })
 
   link1 = () => {
-    this.props.history.push('/')
+    this.props.history.push('/Home');
+    this.setState({ activeA: 'Home'});
+  }
+  link2 = () => {
+    this.props.history.push('/Directory');
+    this.setState({ activeA: 'Directory'});
+  }
+  link3 = () => {
+    this.props.history.push('/Quizzes');
+    this.setState({ activeA: 'Quizzes'});
+  }
+  link4 = () => {
+    this.props.history.push('/About Us');
+    this.setState({ activeA: 'About Us'});
   }
 
-  pressed = (e, {name}) => {
-    this.handleAClick();
-  }
   render() {
-    const {activeItem, itemOne, itemThree, itemTwo, activeA, } = this.state
+    const { activeA } = this.state
 
     return (
-      <div>
+      <Container textAlign='center'>
         <Menu>
-          {colorsA.map(c => (
-            <Menu.Item  key={c} name={c} active={activeA === c} color='red' onClick={this.handleAClick} />
-          ))}
+            <Menu.Item  key={'Home'} name={'Home'} active={activeA === 'Home'} color='red' onClick={this.link1}/>
+            <Menu.Item  key={'Directory'} name={'Directory'} active={activeA === 'Directory'} color='red' onClick={this.link2}/>
+            <Menu.Item  key={'Quizzes'} name={'Quizzes'} active={activeA === 'Quizzes'} color='red' onClick={this.link3}/>
+            <Menu.Item  key={'About Us'} name={'About Us'} active={activeA === 'About Us'} color='red' onClick={this.link4}/>
         </Menu>
-      </div>
+      </Container>
     )
   }
 }
+
+export default withRouter(ColoredMenus);
