@@ -3,9 +3,9 @@ import fire from './../utils/firebase'
 import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import {Container, Button} from 'semantic-ui-react';
-import img5 from '../img/maple-leaf.png'
+import img4 from '../img/maple-leaf-five.png'
 
-class AboutUs extends Component {
+class Forums extends Component {
   state = {
     value: 'hello',
   }
@@ -24,7 +24,7 @@ class AboutUs extends Component {
   }
 
   link = () => {
-    this.props.history.push('/About Us')
+    this.props.history.push('/home')
   }
 
   render() {
@@ -36,11 +36,10 @@ class AboutUs extends Component {
     )
     return (
       <Container>
-          <img src={img5} className="logo" alt="logo"/>
-          {button}
+          <img src={img4} className="logo" alt="logo"/>
       </Container>
     )
   }
 }
 
-export default withRouter(AboutUs);
+export default withRouter(Forums);

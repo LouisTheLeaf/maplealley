@@ -4,6 +4,7 @@ import Menus from './components/Menus';
 import Home from './components/Home';
 import Directory from './components/Directory';
 import Quizzes from './components/Quizzes';
+import Forums from './components/Forums';
 import AboutUs from './components/AboutUs';
 import PageNotFound from './components/PageNotFound';
 import {withRouter} from 'react-router-dom';
@@ -19,10 +20,10 @@ class App extends Component {
         <Menus/>
         <Switch>
             <Route exact path='/Home' component={Home}/>
-            <Route exact path='/Directory' component={Home}/>
-            <Route exact path='/Quizzes' component={Home}/>
-            <Route exact path='/Forums' component={Home}/>
-            <Route exact path='/About Us' component={Home}/>
+            <Route exact path='/Directory' component={Directory}/>
+            <Route exact path='/Quizzes' component={Quizzes}/>
+            <Route exact path='/Forums' component={Forums}/>
+            <Route exact path='/About Us' component={AboutUs}/>
             <Route path='/' component={PageNotFound}/>
         </Switch>
       </div>
