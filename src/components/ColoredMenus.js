@@ -39,8 +39,8 @@ class ColoredMenus extends Component {
     const { activeA } = this.state
 
     return (
-      <Container textAlign='center'>
-        <Menu>
+      <Container textAlign='right'>
+        <Menu style={{alignItem:'right'}}>
             <Menu.Item  key={'Home'} name={'Home'} active={activeA === 'Home'} color='red' onClick={this.link1}/>
             <Menu.Item  key={'Directory'} name={'Directory'} active={activeA === 'Directory'} color='red' onClick={this.link2}/>
             <Menu.Item  key={'Quizzes'} name={'Quizzes'} active={activeA === 'Quizzes'} color='red' onClick={this.link3}/>
