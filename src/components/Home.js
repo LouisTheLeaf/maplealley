@@ -3,7 +3,7 @@ import fire from './../utils/firebase'
 import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import {Container, Button} from 'semantic-ui-react';
-import img1 from '../img/maple-leaf-two.png'
+import img1 from '../img/maple-leaf.png'
 
 class Home extends Component {
   state = {

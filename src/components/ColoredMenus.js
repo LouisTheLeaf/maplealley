@@ -5,7 +5,7 @@ import img1 from '../img/maple-leaf-two.png';
 import img2 from '../img/maple-leaf-three.png';
 import img3 from '../img/maple-leaf-four.png';
 
-const colorsA = ['Home', 'Directory', 'Quizes', 'Forums', 'About Us', 'Contact Us']
+const colorsA = ['Home', 'Directory', 'Quizes', 'Forums', 'About Us']
 
 class ColoredMenus extends Component {
   state = {

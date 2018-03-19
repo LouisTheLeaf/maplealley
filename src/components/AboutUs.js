@@ -3,7 +3,7 @@ import fire from './../utils/firebase'
 import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import {Container, Button} from 'semantic-ui-react';
-import img5 from '../img/maple-leaf.png'
+import img5 from '../img/maple-leaf-two.png'
 
 class AboutUs extends Component {
   state = {
@@ -37,7 +37,10 @@ class AboutUs extends Component {
     return (
       <Container>
           <img src={img5} className="logo" alt="logo"/>
-          {button}
+          <t1>About Us!</t1>
+          <img src={img5} className="logo2" alt="logo"/>
+          <br/> <br/>
+          <t2>Who is behind Maple Alley?</t2>
       </Container>
     )
   }
