@@ -12,7 +12,7 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .App-intro {
@@ -21,25 +21,31 @@
 
 header{
   background-color: rgba(244, 104, 66, 0.8);
-  height: 150px;
+  height: 130px;
   padding: 20px;
 }
 
 h1{
-  color: rgba(234, 96, 37, 1.0);
-  margin-top: 0px;
+  color: rgba(224, 86, 27, 1.0);
+  margin-top: -10px;
+
 }
 
 t1{
   color: rgba(232, 124, 78, 1.0);
   margin-top: 20px;
-  font-size: 80px;
+  font-size: 70px;
 }
 
 t2{
   color: rgba(232, 124, 78, 1.0);
   margin-top: 20px;
   font-size: 30px;
+}
+t3{
+  color: rgba(232, 124, 78, 1.0);
+  margin-top: 0px;
+  font-size: 20px;
 }
 
 @keyframes logo-spin {
