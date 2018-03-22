@@ -28,12 +28,6 @@ class AboutUs extends Component {
   }
 
   render() {
-    let button = (
-      <Button
-        onClick={this.link}>
-        Button Link
-      </Button>
-    )
     return (
       <Container>
           <br/>
