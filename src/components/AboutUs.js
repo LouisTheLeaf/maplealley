@@ -43,10 +43,8 @@ class AboutUs extends Component {
           educate the future generations!
           </t3>
           <br/><br/>
-          <t2><u>Meet the Cast!</u></t2>
-          <br/><br/>
           <t3>Luis Hernandez - The engineer behind the coding of the website
-          and for the upkeep and prosperity of Maple Alley
+              and for the upkeep and prosperity of Maple Alley!
           </t3>
           <br/><br/>
           <t3>Miriam Guevara - The scientist responsible for all that Maple

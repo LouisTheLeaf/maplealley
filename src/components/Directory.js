@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import {Container, Button, Grid, Image,} from 'semantic-ui-react';
 import img2 from '../img/maple-leaf-three.png'
+import ThreeGrid from '../components/ThreeGrid'
 
 class Directory extends Component {
   state = {
@@ -28,16 +29,6 @@ class Directory extends Component {
   }
 
   render() {
-    const Grid = () => (
-  <Grid columns={3} divided>
-    <Grid.Row>
-      <Grid.Column>
-        <Image src='../img/maple-leaf.png' />
-        <t3>Maple Leaves are great!</t3>
-      </Grid.Column>
-    </Grid.Row>
-  </Grid>
-)
     return (
       <Container>
           <br/>
@@ -49,7 +40,7 @@ class Directory extends Component {
               we have collected and released for all to see and learn!
           </t2>
           <br/><br/>
-          {Grid}
+          {ThreeGrid}
       </Container>
     )
   }
