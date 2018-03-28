@@ -19,4 +19,4 @@ class Menus extends Component {
   }
 }
 
-export default withRouter(Menus);
+export default Menus;

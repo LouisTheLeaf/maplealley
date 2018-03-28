@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import {Container, Button, Grid, Image,} from 'semantic-ui-react';
 import img2 from '../img/maple-leaf-three.png'
-import ThreeGrid from '../components/ThreeGrid'
+import TableGrid from '../components/TableGrid'
 
 class Directory extends Component {
   state = {
@@ -40,7 +40,7 @@ class Directory extends Component {
               we have collected and released for all to see and learn!
           </t2>
           <br/><br/>
-          {ThreeGrid}
+          <TableGrid/>
       </Container>
     )
   }
