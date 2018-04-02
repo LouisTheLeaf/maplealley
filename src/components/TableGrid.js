@@ -7,10 +7,10 @@ import {withRouter} from 'react-router-dom';
 class TableGrid extends Component {
 
   historyLink = () => {
-    this.props.history.push('/Home')
+    this.props.history.push('/Directory/History')
   }
   colorLink = () => {
-    this.props.history.push('/Home')
+    this.props.history.push('/Directory/Color')
   }
 
   render() {
@@ -23,7 +23,7 @@ class TableGrid extends Component {
     let colorButton = (
       <Button
         onClick={this.colorLink}>
-         Color 
+         Color
       </Button>
     )
     return (

@@ -10,7 +10,7 @@ class Menus extends Component {
     return (
       <div>
         <header>
-          <img src={logo} className="logo" alt="logo" />
+          <img src={logo} className="logo3" alt="logo" />
           <h1 className="App-title">Welcome to Maple Alley</h1>
         </header>
         <ColoredMenus/>
