@@ -7,7 +7,7 @@ class PageNotFound extends Component {
       <div>
         <br/><br/><br/><br/><br/><br/><br/>
         <t1>Page Not Found!</t1><br/><br/><br/>
-        <t1>Something went worng!</t1>
+        <t1>Something went wrong!</t1>
       </div>
     )
   }

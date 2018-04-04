@@ -3,11 +3,11 @@
 }
 
 .logo {
-  animation: logo-spin infinite 20s linear;
+  animation: logo-spin infinite 40s linear;
   height: 70px;
 }
 .logo2 {
-  animation: logo-spin2 infinite 20s linear;
+  animation: logo-spin2 infinite 40s linear;
   height: 70px;
 }
 .logo3 {

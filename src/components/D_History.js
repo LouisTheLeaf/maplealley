@@ -12,7 +12,7 @@ class D_History extends Component {
   render() {
     let backButton = (
       <Button
-        onClick={this.backButton}>
+        onClick={this.backLink}>
          Back To Directory
       </Button>
     )

@@ -32,9 +32,9 @@ class Directory extends Component {
     return (
       <Container>
           <br/>
-          <img src={img2} className="logo" alt="logo"/>
+          <img src={img2} className="logo"/>
           <t1>¡Directory!</t1>
-          <img src={img2} className="logo2" alt="logo"/>
+          <img src={img2} className="logo2"/>
           <br/><br/>
           <t2>Here you will find every piece of information and data
               we have collected and released for all to see and learn!

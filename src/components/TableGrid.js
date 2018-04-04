@@ -26,6 +26,17 @@ class TableGrid extends Component {
          Color
       </Button>
     )
+    let fadeButton = (
+      <Button animated='fade' size='large'>
+      <Button.Content visible>
+        Color
+      </Button.Content>
+      <Button.Content hidden
+        onClick={this.colorLink}>
+        GO!
+      </Button.Content>
+    </Button>
+    )
     return (
       <Container>
           <Table celled padded>
@@ -63,7 +74,7 @@ class TableGrid extends Component {
                 <Table.Cell>
                   <Header as='h2' textAlign='center'>B</Header>
                 </Table.Cell>
-                <Table.Cell singleLine>{colorButton}</Table.Cell>
+                <Table.Cell singleLine>{fadeButton}</Table.Cell>
                 <Table.Cell>
                   <Rating icon='star' defaultRating={4} maxRating={5} />
                 </Table.Cell>
