@@ -19,6 +19,7 @@ class D_History extends Component {
     return (
       <Container>
         History
+        <br/>
         {backButton}
       </Container>
     );

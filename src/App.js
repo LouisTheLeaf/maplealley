@@ -11,14 +11,13 @@ import AboutUs from './components/AboutUs';
 import PageNotFound from './components/PageNotFound';
 import {withRouter} from 'react-router-dom';
 import {Switch,Route} from 'react-router';
-import logo from './img/maple-leaf.png'
 
 class App extends Component {
 
   render() {
     console.log(this.props)
     return (
-      <div className="App">
+      <div className="Maple">
         <Menus/>
         <Switch>
             <Route exact path='/Home' component={Home}/>

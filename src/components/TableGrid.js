@@ -14,19 +14,18 @@ class TableGrid extends Component {
   }
 
   render() {
-    let historyButton = (
-      <Button
-        onClick={this.historyLink}>
+    let fadeHistoryButton = (
+      <Button animated='fade' size='large'>
+      <Button.Content visible>
         History
-      </Button>
-    )
-    let colorButton = (
-      <Button
-        onClick={this.colorLink}>
-         Color
-      </Button>
-    )
-    let fadeButton = (
+      </Button.Content>
+      <Button.Content hidden
+        onClick={this.historyLink}>
+        GO!
+      </Button.Content>
+    </Button>
+  )
+    let fadeColorButton = (
       <Button animated='fade' size='large'>
       <Button.Content visible>
         Color
@@ -37,9 +36,12 @@ class TableGrid extends Component {
       </Button.Content>
     </Button>
     )
+    const color = 'rgba(244, 104, 66, 0.35)';
     return (
       <Container>
-          <Table celled padded>
+          <Table celled padded
+            style={{backgroundColor:'rgba(12, 211, 117,0.35)',color:'rgba(0,0,0,1.0)'}}
+            color={color} key={color} inverted>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell singleLine>Evidence Rating</Table.HeaderCell>
@@ -55,18 +57,20 @@ class TableGrid extends Component {
                 <Table.Cell>
                   <Header as='h2' textAlign='center'>A</Header>
                 </Table.Cell>
-                <Table.Cell singleLine>{historyButton}</Table.Cell>
+                <Table.Cell singleLine>{fadeHistoryButton}</Table.Cell>
                 <Table.Cell>
-                  <Rating icon='star' defaultRating={5} maxRating={5} />
+                  <Rating icon='star' defaultRating={5} maxRating={5} disabled='true'/>
                 </Table.Cell>
                 <Table.Cell textAlign='right'>
                     100% <br />
                   <a href='#'>67 Studies</a>
                 </Table.Cell>
                 <Table.Cell>
+                  <t4>
                     The History of Leaves and how they have made an impact in
                     our world in a massive one. They helped Determine quite a
                     few events and foretold disasters that were prevented.
+                  </t4>
                 </Table.Cell>
               </Table.Row>
 
@@ -74,17 +78,19 @@ class TableGrid extends Component {
                 <Table.Cell>
                   <Header as='h2' textAlign='center'>B</Header>
                 </Table.Cell>
-                <Table.Cell singleLine>{fadeButton}</Table.Cell>
+                <Table.Cell singleLine>{fadeColorButton}</Table.Cell>
                 <Table.Cell>
-                  <Rating icon='star' defaultRating={4} maxRating={5} />
+                  <Rating icon='star' defaultRating={4} maxRating={5} disabled='true'/>
                 </Table.Cell>
                 <Table.Cell textAlign='right'>
                     83% <br />
                   <a href='#'>29 Studies</a>
                 </Table.Cell>
                 <Table.Cell>
+                  <t4>
                     The colors of leaves reveal a lot of information of it’s
                     contents, illness, plagues, and time of a season!
+                  </t4>
                 </Table.Cell>
               </Table.Row>
             </Table.Body>

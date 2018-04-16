@@ -35,16 +35,16 @@ class AboutUs extends Component {
           <t1>¡About Us!</t1>
           <img src={img5} className="logo2" alt="logo"/>
           <br/><br/>
-          <t2><u>Who is behind Maple Alley?</u></t2>
+          <t2><u>Who is behind Leafania?</u></t2>
           <br/><br/>
-          <t3>We are Maple Alley, a group of three individuals that work
+          <t3>We are Leafania, a group of three individuals that work
           hard toward making a website that provides not only information,
           but also an experience that makes an impact on our goal to
           educate the future generations!
           </t3>
           <br/><br/>
           <t3>Luis Hernandez - The engineer behind the coding of the website
-              and for the upkeep and prosperity of Maple Alley!
+              and for the upkeep and prosperity of Leafania!
           </t3>
           <br/><br/>
           <t3>Miriam Guevara - The scientist responsible for all that Maple

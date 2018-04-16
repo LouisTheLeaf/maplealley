@@ -19,6 +19,7 @@ class D_Color extends Component {
     return (
       <Container>
         Colors
+        <br/>
         {backButton}
       </Container>
     );

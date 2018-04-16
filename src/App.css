@@ -1,5 +1,7 @@
-.App {
+.Maple {
   text-align: center;
+  background-color: rgba(255, 202, 137, 1.0);
+  height: 646px;
 }
 
 .logo {
@@ -14,7 +16,7 @@
   height: 65px;
 }
 
-.App-title {
+.title {
   font-size: 2em;
 }
 
@@ -23,30 +25,39 @@
 }
 
 header{
-  background-color: rgba(244, 104, 66, 0.75);
+  background-color: rgba(8, 175, 114, 1.0);
   height: 130px;
   padding: 20px;
 }
 
 h1{
-  color: rgba(224, 86, 27, 1.0);
+  color: rgba(34, 255, 100, 1.0);
   margin-top: -10px;
-
 }
 
 t1{
   color: rgba(232, 124, 78, 1.0);
   margin-top: 20px;
   font-size: 70px;
+  font-family: fantasy;
 }
 
 t2{
   color: rgba(232, 124, 78, 1.0);
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 35px;
+  font-family: fantasy;
 }
+
 t3{
   color: rgba(232, 124, 78, 1.0);
+  margin-top: 0px;
+  font-size: 25px;
+  font-family: fantasy;
+}
+
+t4{
+  color: rgba(202, 94, 48, 1.0);
   margin-top: 0px;
   font-size: 20px;
 }
