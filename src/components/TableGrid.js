@@ -55,7 +55,7 @@ class TableGrid extends Component {
             <Table.Body>
               <Table.Row>
                 <Table.Cell>
-                  <Header as='h2' textAlign='center'>A</Header>
+                  <Header as='h2' textAlign='center'>A-</Header>
                 </Table.Cell>
                 <Table.Cell singleLine>{fadeHistoryButton}</Table.Cell>
                 <Table.Cell>
@@ -76,7 +76,7 @@ class TableGrid extends Component {
 
               <Table.Row>
                 <Table.Cell>
-                  <Header as='h2' textAlign='center'>B</Header>
+                  <Header as='h2' textAlign='center'>B+</Header>
                 </Table.Cell>
                 <Table.Cell singleLine>{fadeColorButton}</Table.Cell>
                 <Table.Cell>
