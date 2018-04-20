@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import {Container, Button} from 'semantic-ui-react';
 import img1 from '../img/maple-leaf.png'
+import Transitions from '../components/Transitions'
 
 class Home extends Component {
   state = {
@@ -36,7 +37,8 @@ class Home extends Component {
     )
     return (
       <Container>
-          <img src={img1} className="logo"/>
+          <img src={img1} className="homelogo"/>
+          <Transitions/>
       </Container>
     )
   }

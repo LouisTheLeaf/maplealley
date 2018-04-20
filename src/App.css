@@ -4,6 +4,13 @@
   height: 646px;
 }
 
+.homelogo {
+  animation: righthomelogo-spin infinite 10s linear;
+  height: 70px;
+  margin-left: 900px;
+  padding-left: 800px;
+}
+
 .logo {
   animation: logo-spin infinite 40s linear;
   height: 70px;
@@ -60,6 +67,10 @@ t4{
   color: rgba(202, 94, 48, 1.0);
   margin-top: 0px;
   font-size: 20px;
+}
+@keyframes righthomelogo-spin {
+  from { transform: rotate(270deg); }
+  to { transform: rotate(100deg); }
 }
 
 @keyframes logo-spin {
