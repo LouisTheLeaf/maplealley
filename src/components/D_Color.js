@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Button} from 'semantic-ui-react'
 import {withRouter} from 'react-router-dom';
 import {Switch,Route} from 'react-router';
-import logo from '../img/maple-leaf.png'
+import logo from '../img/maple-leaf.png';
 
 class D_Color extends Component {
 
@@ -18,7 +18,8 @@ class D_Color extends Component {
     )
     return (
       <Container>
-        Colors
+        <br/>
+        Color
         <br/>
         {backButton}
       </Container>

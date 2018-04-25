@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { Menu, Container, } from 'semantic-ui-react';
+import { Menu, } from 'semantic-ui-react';
 import {withRouter} from 'react-router-dom';
-import img1 from '../img/maple-leaf-two.png';
-import img2 from '../img/maple-leaf-three.png';
-import img3 from '../img/maple-leaf-four.png';
 
 const colorsA = ['Home', 'Directory', 'Quizes', 'Forums', 'About Us']
 

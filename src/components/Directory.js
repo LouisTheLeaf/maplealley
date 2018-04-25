@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import fire from './../utils/firebase'
-import {Link} from 'react-router-dom';
+import fire from './../utils/firebase';
 import {withRouter} from 'react-router-dom';
-import {Container, Button, Grid, Image,} from 'semantic-ui-react';
-import img2 from '../img/maple-leaf-three.png'
-import TableGrid from '../components/TableGrid'
+import {Container} from 'semantic-ui-react';
+import img2 from '../img/maple-leaf-three.png';
+import TableGrid from '../components/TableGrid';
 
 class Directory extends Component {
   state = {

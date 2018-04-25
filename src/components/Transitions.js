@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { Form, Grid, Image, Transition } from 'semantic-ui-react'
-import herb1 from '../img/herb.png'
-import herb2 from '../img/herb2.png'
+import React, { Component } from 'react';
+import { Form, Grid, Image, Transition } from 'semantic-ui-react';
+import herb1 from '../img/herb.png';
+import herb2 from '../img/herb2.png';
 
 const transitions = ['jiggle', 'flash', 'shake', 'pulse', 'tada', 'bounce']
 

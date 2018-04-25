@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import fire from './../utils/firebase'
-import {Link} from 'react-router-dom';
+import fire from './../utils/firebase';
 import {withRouter} from 'react-router-dom';
-import {Container, Button} from 'semantic-ui-react';
-import img1 from '../img/maple-leaf.png'
-import Transitions from '../components/Transitions'
+import {Container} from 'semantic-ui-react';
+import img1 from '../img/maple-leaf.png';
+import Transitions from '../components/Transitions';
 
 class Home extends Component {
   state = {
@@ -29,12 +28,6 @@ class Home extends Component {
   }
 
   render() {
-    let button = (
-      <Button
-        onClick={this.link}>
-        Button Link
-      </Button>
-    )
     return (
       <Container>
           <img src={img1} className="homelogo"/>

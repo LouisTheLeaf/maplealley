@@ -1,7 +1,5 @@
-import React, {Component} from 'react'
-import { Header, Table, Rating, Container, Button} from 'semantic-ui-react'
-import img2 from '../img/maple-leaf-three.png';
-import {Link} from 'react-router-dom';
+import React, {Component} from 'react';
+import { Header, Table, Rating, Container, Button} from 'semantic-ui-react';
 import {withRouter} from 'react-router-dom';
 
 class TableGrid extends Component {
