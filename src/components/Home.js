@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import fire from './../utils/firebase';
 import {withRouter} from 'react-router-dom';
-import {Container} from 'semantic-ui-react';
+import {Container, Embed} from 'semantic-ui-react';
 import img1 from '../img/maple-leaf.png';
+import Accordion from '../components/HomeAccordion';
 import Transitions from '../components/Transitions';
+import Playlist from '../components/YT_PlaylistEmbed';
 
 class Home extends Component {
   state = {
@@ -30,8 +32,12 @@ class Home extends Component {
   render() {
     return (
       <Container>
-          <img src={img1} className="homelogo"/>
-          <Transitions/>
+          <br/>
+          <img src={img1} className="logo" alt="logo"/>
+          <t1>¡Leafania Home!</t1>
+          <img src={img1} className="logo2" alt="logo"/>
+          <br/><br/>
+          <Accordion/>
       </Container>
     )
   }

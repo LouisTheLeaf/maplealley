@@ -10,19 +10,6 @@ class Directory extends Component {
     value: 'hello',
   }
 
-  componentDidMount(){
-    let leafian = this
-    fire.database().ref('/').on('value', (snapshot) => {
-      leafian.setState({value: console.log(snapshot.val().section1)})
-      console.log('Data Updated')
-    });
-  }
-  writeData = () => {
-    fire.database(). ref('/').set({
-      nestedObject: this.state.newValue
-    })
-  }
-
   link = () => {
     this.props.history.push('/home')
   }

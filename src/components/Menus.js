@@ -8,7 +8,7 @@ class Menus extends Component {
       <div>
         <header>
           <img src={logo} className="logo3" alt="logo" />
-          <h1 className="title">Welcome to Leafania</h1>
+          <h1 className="title">Leafania</h1>
         </header>
         <ColoredMenus/>
       </div>
