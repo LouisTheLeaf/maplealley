@@ -25,7 +25,6 @@ class App extends Component {
             <Route exact path='/Directory/History' component={D_History}/>
             <Route exact path='/Directory/Color' component={D_Color}/>
             <Route exact path='/Quizzes' component={Quizzes}/>
-            <Route exact path='/Forums' component={Forums}/>
             <Route exact path='/About Us' component={AboutUs}/>
             <Route path='/' component={PageNotFound}/>
         </Switch>

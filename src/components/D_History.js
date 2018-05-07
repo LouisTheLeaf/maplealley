@@ -17,7 +17,7 @@ class D_History extends Component {
       <Modal.Content image scrolling>
         <Image
           size='medium'
-          src='/assets/images/wireframe/image.png'
+          src={logo}
           wrapped
         />
 
@@ -25,13 +25,6 @@ class D_History extends Component {
           <Header>Modal Header</Header>
           <p>This is an example of expanded content that will cause the modal's dimmer to scroll</p>
 
-          {_.times(8, i => (
-            <Image
-              key={i}
-              src='/assets/images/wireframe/paragraph.png'
-              style={{ paddingBottom: 5 }}
-            />
-          ))}
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>

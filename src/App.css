@@ -31,6 +31,9 @@
   font-size: large;
 }
 
+.bt {
+  padding-left: 100px;
+}
 header{
   background-color: rgba(8, 175, 114, 1.0);
   height: 130px;

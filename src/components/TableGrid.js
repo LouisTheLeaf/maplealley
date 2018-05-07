@@ -1,28 +1,62 @@
 import React, {Component} from 'react';
-import { Header, Table, Rating, Container, Button} from 'semantic-ui-react';
+import { Header, Table, Rating, Container, Button, Modal, Image, Icon, Grid } from 'semantic-ui-react';
 import {withRouter} from 'react-router-dom';
+import logo from '../img/maple-leaf.png';
+import oldbook from '../img/oldbook.jpeg';
 
 class TableGrid extends Component {
 
   historyLink = () => {
-    this.props.history.push('/Directory/History')
+    this.props.history.push('/Directory')
   }
   colorLink = () => {
     this.props.history.push('/Directory/Color')
   }
 
   render() {
-    let fadeHistoryButton = (
-      <Button animated='fade' size='large'>
-      <Button.Content visible>
-        History
-      </Button.Content>
-      <Button.Content hidden
-        onClick={this.historyLink}>
-        GO!
-      </Button.Content>
-    </Button>
+    let HistoryButton = (
+        <Modal trigger={
+          <Button animated='fade' size='large'>
+          <Button.Content visible>
+            History
+          </Button.Content>
+          <Button.Content hidden>
+            GO!
+          </Button.Content>
+          </Button>
+        } closeIcon={
+          <Button primary className="bt">
+            Close <Icon name='right chevron' />
+          </Button>
+        }>
+        <Modal.Content image scrolling>
+      <Grid columns="2">
+        <Grid.Column>
+              <Image
+                size='medium'
+                src={oldbook}
+              />
+      </Grid.Column>
+      <Grid.Column>
+              <Modal.Description>
+                <t2>Historical Analysis</t2><br/>
+                <t3>Leaves. They have been on trees for as long as anyone can remember. They have played some roles in our human
+                    history as well. They have impacted cultures and ways of living across the globe. Text text text text text
+                    text text text text text text text text text text text text text text text text text text text text text text
+                    text text text text text text text text text text text text text text text text text text text text text text
+                    text text text text text text text text text text text text text text text text text text text text text text
+                    text text text text text text text text text text text text text text text text text text text text text text
+                    text text text text text text text text text text text text text text text text text text text text text text
+                    text text text text text text text text text text text text text text text text text text text text text text
+                    text text text text text text text text text text text text text text text text text text text text text text
+                </t3>
+            </Modal.Description>
+      </Grid.Column>
+      </Grid>
+      </Modal.Content>
+    </Modal>
   )
+    
     let fadeColorButton = (
       <Button animated='fade' size='large'>
       <Button.Content visible>
@@ -55,7 +89,7 @@ class TableGrid extends Component {
                 <Table.Cell>
                   <Header as='h2' textAlign='center'>A-</Header>
                 </Table.Cell>
-                <Table.Cell singleLine>{fadeHistoryButton}</Table.Cell>
+                <Table.Cell singleLine>{HistoryButton}</Table.Cell>
                 <Table.Cell>
                   <Rating icon='star' defaultRating={5} maxRating={5} disabled='true'/>
                 </Table.Cell>

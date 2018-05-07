@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom';
-import {Container} from 'semantic-ui-react';
+import {Container, Embed} from 'semantic-ui-react';
 import img3 from '../img/maple-leaf-four.png';
 
 class Quizzes extends Component {
