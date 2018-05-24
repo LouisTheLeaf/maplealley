@@ -5,8 +5,7 @@ import Home from './components/Home';
 import Directory from './components/Directory';
 import D_History from './components/D_History';
 import D_Color from './components/D_Color';
-import Quizzes from './components/Quizzes';
-import Forums from './components/Forums';
+import Quiz from './components/Quiz'
 import AboutUs from './components/AboutUs';
 import PageNotFound from './components/PageNotFound';
 import {withRouter} from 'react-router-dom';
@@ -24,7 +23,7 @@ class App extends Component {
             <Route exact path='/Directory' component={Directory}/>
             <Route exact path='/Directory/History' component={D_History}/>
             <Route exact path='/Directory/Color' component={D_Color}/>
-            <Route exact path='/Quizzes' component={Quizzes}/>
+            <Route exact path='/Quiz' component={Quiz}/>
             <Route exact path='/About Us' component={AboutUs}/>
             <Route path='/' component={PageNotFound}/>
         </Switch>

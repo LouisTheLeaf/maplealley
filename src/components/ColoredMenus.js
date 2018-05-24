@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Menu, } from 'semantic-ui-react';
 import {withRouter} from 'react-router-dom';
 
-const colorsA = ['Home', 'Directory', 'Quizes', 'Forums', 'About Us']
+const colorsA = ['Home', 'Directory', 'Quiz', 'About Us']
 
 class ColoredMenus extends Component {
   state = {
@@ -20,14 +20,10 @@ class ColoredMenus extends Component {
     this.setState({ activeA: 'Directory'});
   }
   link3 = () => {
-    this.props.history.push('/Quizzes');
-    this.setState({ activeA: 'Quizzes'});
+    this.props.history.push('/Quiz');
+    this.setState({ activeA: 'Quiz'});
   }
   link4 = () => {
-    this.props.history.push('/Forums');
-    this.setState({ activeA: 'Forums'});
-  }
-  link5 = () => {
     this.props.history.push('/About Us');
     this.setState({ activeA: 'About Us'});
   }
@@ -40,8 +36,8 @@ class ColoredMenus extends Component {
         <Menu style={{backgroundColor:'rgba(244, 104, 66, 0.45)',alignItem:'center'}} fluid widths={5}>
             <Menu.Item  key={'Home'} name={'Home'} active={activeA === 'Home'} color='red' onClick={this.link1}/>
             <Menu.Item  key={'Directory'} name={'Directory'} active={activeA === 'Directory'} color='red' onClick={this.link2}/>
-            <Menu.Item  key={'Quizzes'} name={'Quizzes'} active={activeA === 'Quizzes'} color='red' onClick={this.link3}/>
-            <Menu.Item  key={'About Us'} name={'About Us'} active={activeA === 'About Us'} color='red' onClick={this.link5}/>
+            <Menu.Item  key={'Quiz'} name={'Quiz'} active={activeA === 'Quiz'} color='red' onClick={this.link3}/>
+            <Menu.Item  key={'About Us'} name={'About Us'} active={activeA === 'About Us'} color='red' onClick={this.link4}/>
         </Menu>
       </div>
     )
