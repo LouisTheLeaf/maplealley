@@ -5,7 +5,11 @@ import logo from '../img/maple-leaf.png';
 import oldbook from '../img/oldbook.jpeg';
 
 class TableGrid extends Component {
-
+  state = { modalOpenH: false, modalOpenC: false }
+  handleOpenH = () => this.setState({ modalOpenH: true })
+  handleCloseH = () => this.setState({ modalOpenH: false })
+  handleOpenC = () => this.setState({ modalOpenC: true })
+  handleCloseC = () => this.setState({ modalOpenC: false })
   historyLink = () => {
     this.props.history.push('/Directory')
   }
@@ -15,31 +19,38 @@ class TableGrid extends Component {
 
   render() {
     let HistoryButton = (
-        <Modal trigger={
-          <Button animated='fade' size='large'>
-          <Button.Content visible>
-            History
-          </Button.Content>
-          <Button.Content hidden>
-            GO!
-          </Button.Content>
+        <Modal 
+          trigger={
+            <Button onClick={this.handleOpenH} animated='fade' size='large'>
+              <Button.Content visible>
+                History
+              </Button.Content>
+              <Button.Content hidden>
+                GO!
+              </Button.Content>
+            </Button>}
+          open={this.state.modalOpenH}
+          onClose={this.handleCloseC}
+        >
+      <Modal.Header>
+        <Modal.Actions>
+          <t2>Historical Analysis</t2>
+          <Button color='green' onClick={this.handleCloseH}>
+            Close  <Icon name='window close' />
           </Button>
-        } closeIcon={
-          <Button primary className="bt">
-            Close <Icon name='right chevron' />
-          </Button>
-        }>
+        </Modal.Actions>
+      </Modal.Header>
         <Modal.Content image scrolling>
-      <Grid columns="2">
-        <Grid.Column>
+          <Grid columns="2">
+            <Grid.Column>
               <Image
                 size='medium'
                 src={oldbook}
               />
-      </Grid.Column>
-      <Grid.Column>
+            </Grid.Column>
+            <Grid.Column>
               <Modal.Description>
-                <t2>Historical Analysis</t2><br/>
+                <br/>
                 <t3>Leaves. They have been on trees for as long as anyone can remember. They have played some roles in our human
                     history as well. They have impacted cultures and ways of living across the globe. Text text text text text
                     text text text text text text text text text text text text text text text text text text text text text text
@@ -50,11 +61,11 @@ class TableGrid extends Component {
                     text text text text text text text text text text text text text text text text text text text text text text
                     text text text text text text text text text text text text text text text text text text text text text text
                 </t3>
-            </Modal.Description>
-      </Grid.Column>
-      </Grid>
-      </Modal.Content>
-    </Modal>
+              </Modal.Description>
+            </Grid.Column>
+          </Grid>
+        </Modal.Content>
+      </Modal>
   )
     
     let fadeColorButton = (
